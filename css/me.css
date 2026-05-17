@@ -1,0 +1,105 @@
+body {
+    max-width: 1000px;
+    margin: 50px auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei";
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    height: 2000px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.jianli {
+    display: flex; /* 左右布局 */
+    justify-content: space-between; /* 左右对齐 */
+    align-items: flex-start; /* 顶部对齐 */
+    width: 800px; /* 固定宽度 */
+    margin: 0 auto; /* 居中对齐 */
+    padding: 20px; /* 内边距 */
+    gap: 20px; /* 左右内容间距 */
+    box-sizing: border-box;
+}
+
+.left {
+    flex: 3; /* 左边图片区域占比 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 图片和文字居中 */
+}
+
+.left .ima {
+    width: 100%; /* 图片自适应 */
+    height: auto;
+    max-width: 240px; /* 最大宽度限制 */
+    border-radius: 5px; /* 图片圆角 */
+    margin-bottom: 10px;
+}
+
+.left span {
+    font-size: 20px;
+    color: #CC9E8D;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.right {
+    flex: 7; /* 右边内容区域占比 */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 每部分之间的间距 */
+}
+
+.right .first {
+    font-size: 22px;
+    color: #CC9E8D;
+    border-bottom: 1px solid #413f3f;
+    padding-bottom: 5px;
+}
+
+.right .edu {
+    display: flex;
+    justify-content: space-between; /* 左右对齐 */
+    font-size: 16px;
+    color: #5c1d06;
+}
+
+.right .edu .left {
+    flex: 3; /* 学校名称宽度 */
+    text-align: left;
+}
+
+.right .edu .middle {
+    flex: 2; /* 学历信息宽度 */
+    text-align: center;
+}
+
+.time {
+    font-size: 14px;
+    color: #5c1d06;
+    margin-left: 10px;
+}
+
+.third {
+    font-size: 16px;
+    line-height: 24px;
+    color: #5c1d06;
+}
+
+.third .title {
+    font-size: 18px;
+    color: #CC9E8D;
+    margin-bottom: 10px;
+}
+
+.third ul {
+    list-style: none;
+    padding: 0;
+}
+
+.third .other {
+    margin-left: 10px;
+}

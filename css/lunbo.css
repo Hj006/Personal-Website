@@ -1,0 +1,53 @@
+/* 
+轮播图demo
+*/
+
+.banner-container{
+    width:800px;
+    height:410px;
+    margin:10px auto;
+    position:relative;
+    overflow: hidden;/*用于隐藏超出展示容器的内容部分*/
+}
+.banner-image-container{
+    width:4000px;
+    height:410px;
+    margin:10px auto;
+    animation:text 40s infinite  linear;
+    font-size:0px;/*消除图片间隔*/
+    
+}
+.banner-image-container img{
+    width:800px;
+    height:400px;
+    float:left;
+}
+
+/* 轮播图关键帧 */
+@keyframes text {          /*0%-20%是播放下一个图片，0%-10%是图片暂停的时间*/
+    0%,10%{
+        /* margin-left:0px; */
+        transform: translateX(0px);
+    }
+    20%,30%{
+        /* margin-left:-1200px; */
+        transform: translateX(-800px);
+    }
+    40%,50%{
+        /* margin-left:-2400px; */
+        transform: translateX(-1600px);
+    }
+    60%,70%{
+        /* margin-left:-3600px; */
+        transform: translateX(-2400px);
+    }
+    80%,90%{
+        /* margin-left:-4800px; */
+        transform: translateX(-3200px);
+    }
+    100%,120%{
+        /* margin-left: 0px; */
+        transform: translateX(0px);
+    }
+}
+
